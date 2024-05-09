@@ -1,0 +1,12 @@
+###############
+.DS_Store
+*.docx
+
+#VSC
+/.vscode
+*.vsix
+
+
+#Executable files
+Project1/code/p1
+*.exe
