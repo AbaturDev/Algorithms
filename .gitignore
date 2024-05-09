@@ -2,11 +2,13 @@
 .DS_Store
 *.docx
 
-#VSC
+# VSC
 /.vscode
 *.vsix
 
+# Local history for vsc
+Project1/code/.history/
 
-#Executable files
+# Executable files
 Project1/code/p1
 *.exe
