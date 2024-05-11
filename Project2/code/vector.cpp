@@ -2,6 +2,11 @@
 #include <string>
 #include <sstream>
 #include <fstream>
+#include <stdexcept>
+
+Vector::Vector(bool s) : sorted(s)
+{
+}
 
 void Vector::Upload(int size)
 {
@@ -127,6 +132,8 @@ void Vector::merge(vector<Movie>& MV, int left, int mid, int right)
 void Vector::run_mergeSort()
 {
 	mergeSort(MovieVector, 0, MovieVector.size() - 1);
+
+	sorted = true;
 }
 
 float Vector::mean()
@@ -141,6 +148,11 @@ float Vector::mean()
 
 float Vector::median()
 {
+	if(sorted == false)
+	{
+		throw runtime_error("Unsorted data!");
+	}
+	
 	if (MovieVector.size() % 2 == 0)
 	{
 		float median = (MovieVector.at(MovieVector.size() / 2).rank + MovieVector.at((MovieVector.size() / 2)-1).rank)/2;
@@ -193,6 +205,8 @@ void Vector::quickSort(vector<Movie>& MV, int low, int high)
 void Vector::run_quickSort()
 {
 	quickSort(MovieVector, 0, MovieVector.size() - 1);
+
+	sorted = true;
 }
 
 float Vector::getMax(vector<Movie>& MV)
@@ -270,4 +284,6 @@ void Vector::bucketsort(vector<Movie>& MV)
 void Vector::run_bucketSort()
 {
 	bucketsort(MovieVector);
+
+	sorted = true;
 }

@@ -6,8 +6,7 @@ using namespace std;
 
 int main()
 {
-    
-    int x = 1010292;
+    int x = 10000;
 
     Vector a;
     a.Upload(x);
@@ -19,7 +18,6 @@ int main()
 
     cout <<"Mean:   \t" << a.mean() << endl;
     cout <<"Median: \t" << a.median() << endl;
-    
     return 0;
 }
 
