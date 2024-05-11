@@ -1,6 +1,7 @@
 ###############
 .DS_Store
 *.docx
+*.xlsx
 
 # VSC
 /.vscode
@@ -11,4 +12,5 @@ Project1/code/.history/
 
 # Executable files
 Project1/code/p1
+Project2/code/p2
 *.exe
