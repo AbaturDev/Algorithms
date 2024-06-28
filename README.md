@@ -16,3 +16,11 @@ The task involved implementing three sorting algorithms and evaluating their eff
 The objective was to compare the efficiency of these sorting algorithms based on their execution time and computational complexity. The data set for testing was provided in the file "projekt2_dane.csv". This file is a trimmed database of movies from the "IMDb Largest Review Dataset" on kaggle.com, containing only the ranking and title of the movies. The sorting was performed based on the movie rankings.
 
 The sorting algorithms were implemented in C++.
+
+## Project 3 - Shortest Path Problem
+
+The task was to solve the shortest path problem in a weighted graph. The specific problems we faced in this project were:
+* Finding the shortest path from a chosen vertex to all other vertices (shortest path to all).
+* Finding the shortest path between two chosen vertices.
+
+The proposed solution is an implementation of Dijkstra's algorithm in C++.
