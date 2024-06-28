@@ -56,10 +56,10 @@ void measureList(int vertices, int edges, int max)
         auto start = high_resolution_clock::now();
         l.dijkstra(0);
         auto stop = high_resolution_clock::now();
-	    auto duration = duration_cast<nanoseconds>(stop - start);
+	    auto duration = duration_cast<microseconds>(stop - start);
         time += duration.count();
     }
-    cout<<time/100<<"ns"<<endl;
+    cout<<time/100<<"us"<<endl;
 }
 
 void measureMartix(int vertices, int edges, int max)
@@ -73,10 +73,10 @@ void measureMartix(int vertices, int edges, int max)
         auto start = high_resolution_clock::now();
         m.dijkstra(0);
         auto stop = high_resolution_clock::now();
-	    auto duration = duration_cast<nanoseconds>(stop - start);
+	    auto duration = duration_cast<microseconds>(stop - start);
         time += duration.count();
     }
-
+    cout<<time/100<<"us"<<endl;
 }
 
 #endif
